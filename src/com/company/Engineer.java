@@ -1,6 +1,6 @@
 package com.company;
 
-public class Engineer extends Employee {
+public class Engineer implements Employee {
     private int salary;
     private String grade;
 
@@ -20,8 +20,6 @@ public class Engineer extends Employee {
         return this.grade;
     }
 
-    public void label() {
-        System.out.println("Employee's data:");
-    }
+
 
 }

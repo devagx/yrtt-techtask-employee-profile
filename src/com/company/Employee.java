@@ -1,9 +1,11 @@
 package com.company;
 
-public abstract class Employee {
-    public abstract void setSalary (int salary);
-    public abstract int getSalary();
-    public abstract void setGrade(String grade);
-    public abstract String getGrade();
-    public abstract void label();
+public interface Employee {
+     void setSalary (int salary);
+     int getSalary();
+     void setGrade(String grade);
+     String getGrade();
+     default void label(){
+         System.out.println("Employee's data:");
+     }
 }
